@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    
+     <!--CREATE NAVIGATION BAR-->
+<header>
+    <nav class="navbar">
+        <div class="logo"> <img src="image/SkillUP Logo,.PNG" alt="" width="60px"></div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="register.html"> Register</a></li>
+            <li><a href="dashboard.html"> Dashboard</a></li>
+            <li><a href="index.html#contact"> Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+    <!--DASHBOARD HEADING-->
+<section class="dashboard-title">
+    <h1>Student Dashboard</h1>
+    <p>View, Search, Edit, and Manage Registered Student.</p>
+</section>
+
+        <!--DASHBOARD STATISTICS CARDS-->
+<section class="dashboard-stats">
+
+    <div class="card">
+        <h3>Total Students</h3>
+        <p id="totalStudents">0</p>
+    </div>
+
+    <div class="card">
+        <h3>Male Students</h3>
+        <p id="maleStudents">0</p>
+    </div>
+
+    <div class="card">
+        <h3>Female Students</h3>
+        <p id="femaleStudents">0</p>
+    </div>
+
+    <div class="card">
+        <h3>Total Courses</h3>
+        <p id="totalCourse">5</p>
+    </div>
+</section>
+
+    <!---COURSES SECTION-->
+<section class="coursesOffered">
+    <h2>COURSES OFFERED</h2>
+    <select id="coursesOffered">
+        <option value="all">All Courses</option>
+        <option value="Web Development">Web Development</option>
+        <option value="Data Analysis">Data Analysis</option>
+        <option value="UI/UX Design">UI/UX Design</option>
+        <option value="Cyber Security">Cyber Security</option>
+        <option value="Graphics Design">Graphics Design</option>
+    </select>
+</section>
+
+    <!--TABLE-->
+<section class="student-table">
+    <h2>Registered Students</h2>
+
+    <div class="search-box">
+    <input
+        type="text"
+        id="searchStudent"
+        placeholder="🔍 Search student by name..."
+        onkeyup="searchStudent()">
+    </div>
+    <table>
+        <thead>
+            <tr>
+                <th>S/N</th>
+                <th>Passport</th>
+                <th>Full name</th>
+                <th>Email</th>
+                <th>Gender</th>
+                <th>Age</th>
+                <th>Course</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+
+        <tbody id="tableBody">
+            <!--purposely left empty for JS to automatically insert rows into the table immidiately after a successful registration.-->
+        </tbody>
+    </table>
+</section>
+
+ <!--FOOTER SECTION-->
+         <footer>
+            <div class="footer-content">
+                <h3>SkillUp Academy</h3>
+        <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="register.html"> Register</a></li>
+            <li><a href="dashboard.html"> Dashboard</a></li>
+            <li><a href="index.html#contact"> Contact</a></li>
+        </ul>
+
+         <p><strong>Phone</strong>+234 913 938 6215 , +234 707 468 4151 </p>
+                <p><strong>Email:</strong>Skillupacademy11@gmail.com</p>
+                <p><strong>Office Hours:</strong>Monday - Friday | 8:00 AM - 5:00 PM</p>
+                <p>&copy; 2026 SkillUp Academy. All Right Reserved.</p>
+
+            </div>
+         </footer>
+
+         <script src="main.js"></script>
+
+</body>
+</html>
